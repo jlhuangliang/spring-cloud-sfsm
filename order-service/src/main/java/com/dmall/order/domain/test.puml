@@ -1,0 +1,8 @@
+@startuml
+
+OrderCreated <-- [Order]
+[Shipping] <- OrderCreated
+[Mail Server] <-- OrderCreated
+OrderCreated -> [Inventory]
+
+@enduml
